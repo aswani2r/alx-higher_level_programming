@@ -1,4 +1,4 @@
-#!/usrt/bin/node
+#!/usr/bin/node
 
 function factorial(n) {
 	n = Number(n);
