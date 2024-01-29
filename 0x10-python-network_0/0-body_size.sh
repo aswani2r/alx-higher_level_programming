@@ -1,3 +1,3 @@
-#!/usr/bin/bash
+#!/bin/bash
 # this script takesi URL and sends request to display the size in bytes
-curl -s "$1" | wc -c
+curl -s "$1" --write-out "Size: %{size_download}\n" -o /dev/null 
